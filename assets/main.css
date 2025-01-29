@@ -5,47 +5,75 @@
 }
 /* App-wide styling */
 body {
-    background-color: #0f1116;
-    color: #ffffff;
+    background-color: #191919;
+    color: #C3C3C3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
 }
 
-#hero {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#Title {
     align-items: center;
-}
-
-#links {
-    width: 400px;
-    text-align: left;
-    font-size: x-large;
-    color: white;
     display: flex;
-    flex-direction: column;
-}
-
-#links a {
-    color: white;
-    text-decoration: none;
+    justify-content: center;
     margin-top: 20px;
-    margin: 10px 0px;
-    border: white 1px solid;
-    border-radius: 5px;
-    padding: 10px;
 }
 
-#links a:hover {
-    background-color: #1f1f1f;
+.navigtaion {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Center and style search bar and submit button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
 }
 
-#header {
-    max-width: 1200px;
+.search-container button:hover {
+    background-color: #45a049;
 }
 
+/* Style for cards */
+.card {
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: #C3C3C3;
+    gap: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
+.card-content {
+    font-size: 16px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
