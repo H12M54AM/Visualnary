@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use crate::Card;
+// use crate::CardComponent;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");
@@ -45,21 +45,21 @@ pub fn Hero() -> Element {
                 input { type: "text", placeholder: "Search..." }
                 button { "Search" }
             }
-            div { class: "cards",
-                for i in 0..4 {
-                    Card { title_card: &format!("Card {}", i + 1), content_card: "This is a card content" }
-                }
-            }
+            // div { class: "cards",
+            //     for i in 0..4 {
+            //         CardComponent { title_card: &format!("Card {}", i + 1), content_card: "This is a card content" }
+            //     }
+            // }
         }
     }
 }
 
-#[component]
-pub fn Card(title_card: &str, content_card: &str) -> Element {
-    rsx! {
-        div { class: "card",
-            h3 { class: "card-title", "{title_card}" }
-            p { class: "card-content", "{content_card}" }
-        }
-    }
-}
+// #[component]
+// pub fn CardComponent<'a>(title_card: &'a str, content_card: &'a str) -> Element {
+//     rsx! {
+//         div { class: "card",
+//             h3 { class: "card-title", "{title_card}" }
+//             p { class: "card-content", "{content_card}" }
+//         }
+//     }
+// }
